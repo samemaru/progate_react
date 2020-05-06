@@ -1,4 +1,5 @@
 import React from 'react';
+import Language from './Language';
 
 class App extends React.Component {
   constructor(props) {
@@ -21,6 +22,10 @@ class App extends React.Component {
         </h1>
         <button onClick={()=>{this.handleClick()}}>+</button>
         
+        < Language />
+        < Language />
+        < Language />
+
       </div>
     );
   }
