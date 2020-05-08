@@ -9,22 +9,20 @@ class App extends React.Component {
     
   }
   
-  handleClick(){
-    this.setState({count : this.state.count + 1});
-  }
+  
 
   render() {
     return (
-      <div>
-        <h1>
-          {this.state.count}
-          
-        </h1>
-        <button onClick={()=>{this.handleClick()}}>+</button>
-        
-        < Language />
-        < Language />
-        < Language />
+      <div>       
+        < Language 
+        name='HTML'
+        image='https://s3-ap-northeast-1.amazonaws.com/progate/shared/images/lesson/react/html.svg' />
+        < Language
+        name='JavaScript'
+        image='https://s3-ap-northeast-1.amazonaws.com/progate/shared/images/lesson/react/es6.svg' />
+        < Language
+        name='React'
+        image ='https://s3-ap-northeast-1.amazonaws.com/progate/shared/images/lesson/react/react.svg' />
 
       </div>
     );
@@ -34,7 +32,25 @@ class App extends React.Component {
 export default App;
 
 
+/* カウントアップボタン
+handleClick(){
+    this.setState({count : this.state.count + 1});
+  }
 
+render() {
+    return (
+      <div>
+        <h1>
+          {this.state.count}
+          
+        </h1>
+        <button onClick={()=>{this.handleClick()}}>+</button>
+      
+      </div>
+    );
+  }
+
+*/
 
 /* I-1~12 : 切り替えボタン
 
