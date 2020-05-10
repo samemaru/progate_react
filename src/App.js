@@ -1,6 +1,21 @@
 import React from 'react';
 import Language from './Language';
+import Lesson from './Lesson';
 
+class Lesson extends React.Component{
+  render(){
+    return(
+        <div>
+          <main />
+
+        </div>
+    )
+  }
+}
+
+export default App;
+
+/*
 class App extends React.Component {
   render() {
     // 指定されたコードを貼り付けてください
@@ -36,7 +51,7 @@ class App extends React.Component {
         <h1>言語一覧</h1>
         <div className='language'>
 
-          {/* mapメソッドを用いて、Languageコンポーネントを表示 */}
+          {/* mapメソッドを用いて、Languageコンポーネントを表示 }
           {languageList.map((languageItem) => {
             return (
               // Languageコンポーネントを呼び出し、その中でpropsを渡す
@@ -53,7 +68,11 @@ class App extends React.Component {
   }
 }
 
-export default App;
+
+*/
+
+
+
 
 
 /* カウントアップボタン
