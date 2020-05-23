@@ -62,7 +62,7 @@ h3 {
   padding: 96px 0;
 }
 
-.lesson-container {
+.lesson-container{
   margin-top: 96px;
 }
 
@@ -140,6 +140,55 @@ h3 {
   color: #8491a5;
   background-color: #ccd9ea;
   transition: .3s ease-in-out;
+}
+
+.contact-container{
+  margin-top: 96px;
+}
+
+.contact-form p {
+  color: #8491a5;
+  margin-top: 32px;
+  margin-bottom: 8px;
+}
+
+.contact-form input[type=submit] {
+  margin-top: 32px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  box-sizing: border-box;
+  background-color: #ffffff;
+  color: #8491a5;
+  width: 440px;
+  font-size: 16px;
+  padding: 10px;
+  border: 1px solid #bac6d3;
+  border-radius: 3px;
+  display: block;
+}
+
+.contact-form input {
+  height: 48px;
+}
+
+.contact-form textarea {
+  height: 184px;
+}
+
+.contact-form input[type=submit] {
+  color: #fff;
+  width: 184px;
+  height: 48px;
+  font-size: 13px;
+  background-color: #30c8d6;
+  border: none;
+  margin-top: 32px;
+}
+
+.contact-form input[type=submit]:hover {
+  cursor: pointer;
 }
 
 .footer {
