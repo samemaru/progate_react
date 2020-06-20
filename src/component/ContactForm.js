@@ -5,7 +5,13 @@ class ContactForm extends React.Component {
     super(props);
     this.state = {
       isSubmitted : false,
+      email : '',
     };
+  }
+
+  handleEmailChange(event){
+    const inputValue = event.target.value;
+    this.setState({email:inputValue});
   }
 
   render(){
@@ -21,7 +27,9 @@ class ContactForm extends React.Component {
       contactForm = (
         <form>
           <p>メールアドレス</p>
-          <input />
+          <input value={this.state.email}
+          onChange={(event)=>{this.handleEmailChange(event)}}
+          />
 
           <p>お問い合わせ内容</p>
           <textarea />
